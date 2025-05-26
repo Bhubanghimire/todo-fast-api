@@ -6,8 +6,8 @@ SQLALCHEMY_DATABASE_URL = "postgresql://postgres:8924@localhost:5432/todo_fastap
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-# Base = declarative_base()
-session = SessionLocal()
+Base = declarative_base()
+# db = SessionLocal()
 
 
 def get_db():

@@ -1,8 +1,5 @@
 from sqlalchemy import Column, Integer, Text, String, Boolean
-from sqlalchemy.orm import declarative_base
-from database import engine
-
-Base = declarative_base()
+from database import engine, Base
 
 
 class TODO(Base):
